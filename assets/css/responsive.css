@@ -1,0 +1,501 @@
+/* 响应式设计 */
+
+/* 大屏幕 (1200px+) */
+@media (min-width: 1200px) {
+    .link-cards-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .header-container {
+        max-width: 1400px;
+    }
+    
+    .main-container {
+        max-width: 1400px;
+    }
+    
+    .footer-container {
+        max-width: 1400px;
+    }
+}
+
+/* 中等屏幕 (992px - 1199px) */
+@media (max-width: 1199px) {
+    .link-cards-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .header-container {
+        padding: 15px 15px;
+    }
+    
+    .main-container {
+        padding: 0 15px;
+    }
+}
+
+/* 小屏幕 (768px - 991px) */
+@media (max-width: 991px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .logo-section {
+        order: 1;
+    }
+    
+    .search-section {
+        order: 2;
+        max-width: 100%;
+    }
+    
+    .admin-section {
+        order: 3;
+        min-width: auto;
+    }
+    
+    .main-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .sidebar {
+        width: 100%;
+        position: static;
+        order: 2;
+    }
+    
+    .content-area {
+        order: 1;
+    }
+    
+    .link-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .footer-content {
+        gap: 20px;
+    }
+}
+
+/* 移动设备 (576px - 767px) */
+@media (max-width: 767px) {
+    .site-logo {
+        width: 150px;
+        height: 45px;
+    }
+    
+    .site-logo-text {
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+    
+    .search-container {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .search-engine-select {
+        padding: 10px 12px;
+        font-size: 13px;
+        min-width: 100px;
+        border-radius: 20px;
+    }
+    
+    .search-form {
+        border-radius: 20px;
+        max-width: 100%;
+    }
+    
+    .search-input {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .search-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .admin-section {
+        width: 100%;
+    }
+    
+    .admin-info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .sidebar {
+        border-radius: 6px;
+    }
+    
+    .sidebar-header {
+        padding: 15px;
+    }
+    
+    .category-link {
+        padding: 10px 15px;
+    }
+    
+    .sidebar-actions {
+        padding: 10px 15px;
+    }
+    
+    .slideshow-section {
+        height: 150px;
+        border-radius: 6px;
+    }
+    
+    .slide-content {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 10px;
+    }
+    
+    .slide-title {
+        font-size: 16px;
+    }
+    
+    .slide-description {
+        font-size: 12px;
+    }
+    
+    .slide-link {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .slide-nav {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .slide-nav.prev {
+        left: 10px;
+    }
+    
+    .slide-nav.next {
+        right: 10px;
+    }
+    
+    .recommended-section, .main-links-section {
+        padding: 15px;
+        border-radius: 6px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+    }
+    
+    .category-title {
+        font-size: 16px;
+    }
+    
+    .link-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .link-card {
+        height: 70px;
+    }
+    
+    .card-link {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .card-icon {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .default-icon {
+        font-size: 16px;
+    }
+    
+    .card-title {
+        font-size: 13px;
+    }
+    
+    .card-description {
+        font-size: 11px;
+    }
+    
+    .visit-count {
+        font-size: 10px;
+    }
+    
+    .recommended-badge {
+        font-size: 9px;
+        padding: 1px 4px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    
+    .footer-item {
+        font-size: 12px;
+    }
+    
+    .footer-links {
+        margin-top: 10px;
+    }
+    
+    .footer-link {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* 超小屏幕 (最大575px) */
+@media (max-width: 575px) {
+    .header-container {
+        padding: 10px;
+    }
+    
+    .site-logo {
+        width: 120px;
+        height: 36px;
+    }
+    
+    .site-logo-text {
+        width: 120px;
+        height: 36px;
+        font-size: 16px;
+    }
+    
+    .search-engine-select {
+        padding: 8px 10px;
+        font-size: 12px;
+        min-width: 90px;
+        border-radius: 15px;
+    }
+    
+    .search-input {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+    
+    .search-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+    
+    .main-container {
+        padding: 0 10px;
+        gap: 10px;
+    }
+    
+    .slideshow-section {
+        height: 120px;
+    }
+    
+    .placeholder-slide h3 {
+        font-size: 18px;
+    }
+    
+    .placeholder-slide p {
+        font-size: 14px;
+    }
+    
+    .recommended-section, .main-links-section {
+        padding: 10px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+    }
+    
+    .category-title {
+        font-size: 15px;
+    }
+    
+    .link-cards-container {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    
+    .link-card {
+        height: 65px;
+        max-width: 100%;
+    }
+    
+    .card-link {
+        padding: 8px;
+        gap: 6px;
+    }
+    
+    .card-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .default-icon {
+        font-size: 14px;
+    }
+    
+    .card-title {
+        font-size: 12px;
+    }
+    
+    .card-description {
+        font-size: 10px;
+        -webkit-line-clamp: 1;
+    }
+    
+    .card-meta {
+        gap: 2px;
+    }
+    
+    .visit-count {
+        font-size: 9px;
+    }
+    
+    .recommended-badge {
+        font-size: 8px;
+        padding: 1px 3px;
+    }
+    
+    .site-footer {
+        padding: 15px 0;
+    }
+    
+    .footer-container {
+        padding: 0 10px;
+    }
+    
+    .footer-content {
+        gap: 8px;
+    }
+    
+    .footer-item {
+        font-size: 11px;
+    }
+}
+
+/* 动态调整卡片宽度 */
+@media (min-width: 576px) {
+    .link-card {
+        min-width: 200px;
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 575px) {
+    .link-card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* 横屏手机优化 */
+@media (max-height: 500px) and (orientation: landscape) {
+    .slideshow-section {
+        height: 100px;
+    }
+    
+    .slide-content {
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+        padding: 5px;
+    }
+    
+    .slide-title {
+        font-size: 14px;
+        margin-bottom: 2px;
+    }
+    
+    .slide-description {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    
+    .slide-link {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
+}
+
+/* 打印样式 */
+@media print {
+    .site-header,
+    .sidebar,
+    .slideshow-section,
+    .site-footer {
+        display: none;
+    }
+    
+    .main-container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .content-area {
+        gap: 10px;
+    }
+    
+    .recommended-section,
+    .main-links-section {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        page-break-inside: avoid;
+    }
+    
+    .link-card {
+        border: 1px solid #ddd;
+        box-shadow: none;
+    }
+    
+    .link-card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .card-link {
+        color: #000 !important;
+    }
+}
+
+/* 高对比度模式支持 */
+@media (prefers-contrast: high) {
+    .link-card {
+        border-width: 2px;
+    }
+    
+    .search-engine.active {
+        border: 2px solid #000;
+    }
+    
+    .btn-primary {
+        border: 2px solid #000;
+    }
+}
+
+/* 减少动画模式支持 */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .slide {
+        transition: none;
+    }
+    
+    .link-card:hover {
+        transform: none;
+    }
+}

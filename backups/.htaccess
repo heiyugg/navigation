@@ -1,0 +1,28 @@
+# 保护备份文件安全
+# 只允许管理员下载备份文件
+
+# 拒绝所有直接访问
+Order Deny,Allow
+Deny from all
+
+# 只允许从本地访问（可选）
+# Allow from 127.0.0.1
+# Allow from ::1
+
+# 或者只允许特定IP访问（根据需要修改）
+# Allow from 192.168.1.0/24
+
+# 防止目录浏览
+Options -Indexes
+
+# 防止执行PHP文件
+<Files "*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# 只允许下载.sql文件（通过PHP脚本控制）
+<Files "*.sql">
+    Order Deny,Allow
+    Deny from all
+</Files>

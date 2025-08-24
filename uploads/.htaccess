@@ -1,0 +1,14 @@
+# 禁止执行PHP文件
+<Files "*.php">
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# 只允许访问图片文件
+<FilesMatch "\.(jpg|jpeg|png|gif|webp|bmp)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# 禁止目录浏览
+Options -Indexes
