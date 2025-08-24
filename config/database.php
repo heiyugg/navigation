@@ -1,9 +1,9 @@
 <?php
 $db_config = [
     'host' => 'localhost',
-    'username' => 'hhh',
-    'password' => 'hhhhhh',
-    'database' => 'hhh',
+    'username' => 'jjj',
+    'password' => 'jjjjjj',
+    'database' => 'jjj',
     'charset' => 'utf8mb4'
 ];
 

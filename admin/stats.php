@@ -241,7 +241,7 @@ ob_start();
                         <div style="display: flex; align-items: center; padding: 10px 0; border-bottom: 1px solid #eee;">
                             <div style="display: flex; align-items: center; gap: 8px; flex: 1;">
                                 <?php if ($category['icon']): ?>
-                                    <span style="font-size: 16px;"><?php echo h($category['icon']); ?></span>
+                                    <?php echo renderCategoryIcon($category['icon'], '16px'); ?>
                                 <?php endif; ?>
                                 <div>
                                     <div style="font-weight: 600; font-size: 14px;"><?php echo h($category['name']); ?></div>

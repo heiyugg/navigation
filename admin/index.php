@@ -210,17 +210,6 @@ if (isAdminLoggedIn()) {
             <div class="back-link">
                 <a href="../index.php">← 返回首页</a>
             </div>
-            
-            <div class="features">
-                <h3>后台管理功能</h3>
-                <ul>
-                    <li>网站配置管理</li>
-                    <li>分类和链接管理</li>
-                    <li>幻灯片管理</li>
-                    <li>访问统计查看</li>
-                    <li>系统日志查看</li>
-                </ul>
-            </div>
         </div>
     </div>
 </body>
