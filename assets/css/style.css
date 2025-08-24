@@ -661,6 +661,51 @@ body {
     color: white;
 }
 
+.footer-item.github a {
+    color: #74c0fc;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.footer-item.github a:hover {
+    color: #339af0;
+    background: rgba(116, 192, 252, 0.1);
+    transform: translateY(-1px);
+}
+
+.github-icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.github-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.github-separator {
+    color: #7f8c8d;
+    font-weight: normal;
+    margin: 0 2px;
+}
+
+.github-repo {
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.footer-item.github a:hover .github-repo {
+    opacity: 1;
+}
+
 .separator {
     color: #7f8c8d;
     font-size: 12px;
