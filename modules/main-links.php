@@ -20,10 +20,10 @@
                 <div class="link-cards-container">
                     <?php foreach ($group['links'] as $link): ?>
                         <div class="link-card main-card">
-                            <a href="<?php echo h($link['url']); ?>" 
+                            <a href="go.php?id=<?php echo $link['id']; ?>" 
                                target="<?php echo !empty($link['target']) ? h($link['target']) : '_blank'; ?>" 
                                class="card-link"
-                               onclick="updateVisitCount(<?php echo $link['id']; ?>)">
+                               title="<?php echo h($link['url']); ?>">
                                 
                                 <?php if (!empty($link['icon'])): ?>
                                     <div class="card-icon">

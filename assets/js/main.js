@@ -254,24 +254,9 @@ function initLinkCards() {
 }
 
 /**
- * 更新访问计数
+ * 访问统计现在通过 go.php 页面直接处理
+ * 不再需要JavaScript异步更新访问计数
  */
-function updateVisitCount(linkId) {
-    if (!linkId) return;
-    
-    // 发送异步请求更新访问计数
-    fetch('api/update-visit.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            link_id: linkId
-        })
-    }).catch(error => {
-        console.log('访问计数更新失败:', error);
-    });
-}
 
 /**
  * 回到顶部功能
